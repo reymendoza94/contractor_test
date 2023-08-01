@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confirmar Eliminación</title>
+</head>
+<body>
+    <h1>¿Estás seguro que deseas eliminar la etiqueta "{{ label.label_name }}"?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="submit" value="Eliminar">
+    </form>
+</body>
+</html>

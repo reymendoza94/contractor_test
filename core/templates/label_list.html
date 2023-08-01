@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lista de Etiquetas</title>
+</head>
+<body>
+    <h1>Lista de Etiquetas</h1>
+    <ul>
+        {% for label in labels %}
+            <li>{{ label.label_name }} - {{ label.get_tipo_etiqueta_display }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
